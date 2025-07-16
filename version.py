@@ -1,6 +1,6 @@
 import subprocess
 
-def get_latest_tag():
+def get_latest_tag() -> str:
     try:
         tag = subprocess.check_output(
             ["git", "describe", "--tags", "--abbrev=0"],
